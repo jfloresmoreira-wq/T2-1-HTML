@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jhoan">
+    <meta name="description" content="Página web sobre la película El Retorno del Rey">
+    <meta name="date" content="2026-10-19">
+    <title>El Retorno del Rey</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        img {
+            margin-right: 10px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>El Señor de los Anillos: El Retorno del Rey</h1>
+    </header>
+
+    <section>
+
+        <nav>
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#sinopsis">Sinopsis</a></li>
+                <li><a href="#imagenes">Imágenes</a></li>
+                <li><a href="#actores">Actores</a></li>
+                <li><a href="#trailer">Tráiler</a></li>
+            </ul>
+        </nav>
+
+        <article>
+
+            <p>
+                El Retorno del Rey es la tercera película de la trilogía
+                dirigida por Peter Jackson y basada en la obra de J.R.R. Tolkien.
+            </p>
+
+            <h2 id="sinopsis">Sinopsis</h2>
+
+            <p>
+                Mientras Frodo y Sam se acercan al Monte del Destino para destruir
+                el Anillo Único, Aragorn lidera a los pueblos libres de la Tierra
+                Media en la batalla final contra Sauron.
+            </p>
+
+            <h2 id="imagenes">Imágenes de la película</h2>
+
+            <img src="imagen.jpg.webp"
+                alt="Cartel de El Retorno del Rey"
+                width="350">
+
+            <img src="imagen2.jpg"
+                alt="Imagen de acción"
+                width="350">
+
+            <h2 id="actores">Actores principales</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actor</th>
+                        <th>Personaje</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Elijah Wood</td>
+                        <td>Frodo Bolsón</td>
+                    </tr>
+
+                    <tr>
+                        <td>Viggo Mortensen</td>
+                        <td>Aragorn</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ian McKellen</td>
+                        <td>Gandalf</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sean Astin</td>
+                        <td>Sam Gamyi</td>
+                    </tr>
+
+                    <tr>
+                        <td>Orlando Bloom</td>
+                        <td>Legolas</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="trailer">Tráiler de la película</h2>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/V75dMMIW2B4"
+                title="Tráiler de El Retorno del Rey"
+                allowfullscreen>
+            </iframe>
+
+        </article>
+
+    </section>
+
+    <footer>
+        <p>Página creada por Jhoan</p>
+    </footer>
+
+</body>
+
+</html>
