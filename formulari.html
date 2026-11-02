@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>formulari</title>
+</head>
+<body>
+
+<form action="#" method="POST">
+
+    <fieldset>
+        <legend>Dades Personals</legend>
+
+        <label for="nom">Nom i Cognoms:</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom i cognoms" required>
+
+        <br><br>
+
+        <label for="correu">Correu electrònic:</label>
+        <input type="email" id="correu" name="correu" placeholder="correu@exemple.com" required>
+
+        <br><br>
+
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" minlength="8">
+
+        <br><br>
+
+        <label for="data">Data de naixement:</label>
+        <input type="date" id="data" name="data">
+
+        <br><br>
+
+        <label for="edat">Edat:</label>
+        <input type="number" id="edat" name="edat" min="16" max="99">
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Dades Acadèmiques i Preferències</legend>
+
+        <p>Torn d'estudi:</p>
+
+        <input type="radio" id="mati" name="torn" value="mati">
+        <label for="mati">Matí</label>
+
+        <input type="radio" id="tarda" name="torn" value="tarda">
+        <label for="tarda">Tarda</label>
+
+        <br><br>
+
+        <p>Mòduls matriculats:</p>
+
+        <input type="checkbox" id="lm" name="moduls" value="lm">
+        <label for="lm">Llenguatges de Marques</label>
+
+        <br>
+
+        <input type="checkbox" id="prog" name="moduls" value="prog">
+        <label for="prog">Programació</label>
+
+        <br>
+
+        <input type="checkbox" id="bd" name="moduls" value="bd">
+        <label for="bd">Bases de Dades</label>
+
+        <br><br>
+
+        <label for="experiencia">Nivell d'experiència prèvia:</label>
+        <select id="experiencia" name="experiencia">
+            <option>Sense experiència</option>
+            <option>Bàsic</option>
+            <option>Intermedi</option>
+            <option>Avançat</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Observacions i Botons</legend>
+
+        <label for="comentaris">Comentaris / Biografia:</label>
+        <br>
+        <textarea id="comentaris" name="comentaris" rows="4" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="termes" name="termes" required>
+        <label for="termes">Accepto la política de privacitat</label>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablir">
+
+    </fieldset>
+
+</form>
+
+</body>
+</html>
